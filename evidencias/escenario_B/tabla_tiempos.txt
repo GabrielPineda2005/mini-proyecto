@@ -1,0 +1,41 @@
+﻿+----+---------------+---------+-----------+----------+-----------+----------+---------------+-----------------+--------------+
+| id | tipo          | monto   | estado    | creado   | procesado | espera_s | procesado_por | veces_procesada | consumidores |
++----+---------------+---------+-----------+----------+-----------+----------+---------------+-----------------+--------------+
+|  1 | DEPOSITO      | 4165.89 | PROCESADO | 22:13:30 | 22:13:34  |        4 | consumidor1   |               1 | consumidor1  |
+|  2 | RETIRO        | 1175.86 | PROCESADO | 22:13:32 | 22:13:35  |        3 | consumidor2   |               1 | consumidor2  |
+|  3 | TRANSFERENCIA | 4664.32 | PROCESADO | 22:13:33 | 22:13:38  |        5 | consumidor1   |               1 | consumidor1  |
+|  4 | DEPOSITO      | 1902.33 | PROCESADO | 22:13:35 | 22:13:41  |        6 | consumidor2   |               1 | consumidor2  |
+|  5 | TRANSFERENCIA | 3777.50 | PROCESADO | 22:13:37 | 22:13:43  |        6 | consumidor1   |               1 | consumidor1  |
+|  6 | RETIRO        | 4519.75 | PROCESADO | 22:13:38 | 22:13:44  |        6 | consumidor2   |               1 | consumidor2  |
+|  7 | RETIRO        | 4111.44 | PROCESADO | 22:13:40 | 22:13:48  |        8 | consumidor1   |               1 | consumidor1  |
+|  8 | RETIRO        | 3855.57 | PROCESADO | 22:13:41 | 22:13:49  |        8 | consumidor2   |               1 | consumidor2  |
+|  9 | RETIRO        | 3630.65 | PROCESADO | 22:13:42 | 22:13:51  |        9 | consumidor1   |               1 | consumidor1  |
+| 10 | RETIRO        | 2485.64 | PROCESADO | 22:13:44 | 22:13:54  |       10 | consumidor2   |               1 | consumidor2  |
+| 11 | DEPOSITO      |  804.25 | PROCESADO | 22:13:46 | 22:13:56  |       10 | consumidor1   |               1 | consumidor1  |
+| 12 | DEPOSITO      | 4272.68 | PROCESADO | 22:13:47 | 22:13:58  |       11 | consumidor2   |               1 | consumidor2  |
+| 13 | TRANSFERENCIA | 1238.22 | PROCESADO | 22:13:49 | 22:14:01  |       12 | consumidor1   |               1 | consumidor1  |
+| 14 | RETIRO        | 1461.10 | PROCESADO | 22:13:50 | 22:14:02  |       12 | consumidor2   |               1 | consumidor2  |
+| 15 | RETIRO        | 1461.56 | PROCESADO | 22:13:52 | 22:14:04  |       12 | consumidor1   |               1 | consumidor1  |
+| 16 | DEPOSITO      | 2571.87 | PROCESADO | 22:13:54 | 22:14:06  |       12 | consumidor2   |               1 | consumidor2  |
+| 17 | DEPOSITO      | 2685.31 | PROCESADO | 22:13:55 | 22:14:09  |       14 | consumidor1   |               1 | consumidor1  |
+| 18 | DEPOSITO      | 1033.98 | PROCESADO | 22:13:57 | 22:14:13  |       16 | consumidor2   |               1 | consumidor2  |
+| 19 | DEPOSITO      |  163.98 | PROCESADO | 22:13:58 | 22:14:15  |       17 | consumidor1   |               1 | consumidor1  |
+| 20 | DEPOSITO      | 1432.94 | PROCESADO | 22:13:59 | 22:14:17  |       18 | consumidor2   |               1 | consumidor2  |
+| 21 | DEPOSITO      | 3476.83 | PROCESADO | 22:14:00 | 22:14:19  |       19 | consumidor1   |               1 | consumidor1  |
+| 22 | DEPOSITO      | 3549.31 | PROCESADO | 22:14:02 | 22:14:21  |       19 | consumidor2   |               1 | consumidor2  |
+| 23 | DEPOSITO      |  525.15 | PROCESADO | 22:14:03 | 22:14:22  |       19 | consumidor1   |               1 | consumidor1  |
+| 24 | DEPOSITO      | 4835.35 | PROCESADO | 22:14:04 | 22:14:23  |       19 | consumidor2   |               1 | consumidor2  |
+| 25 | TRANSFERENCIA | 3212.80 | PENDIENTE | 22:14:05 | NULL      |     NULL | NULL          |               0 | NULL         |
+| 26 | TRANSFERENCIA | 3255.43 | PENDIENTE | 22:14:07 | NULL      |     NULL | NULL          |               0 | NULL         |
+| 27 | TRANSFERENCIA |  845.71 | PENDIENTE | 22:14:09 | NULL      |     NULL | NULL          |               0 | NULL         |
+| 28 | DEPOSITO      | 2018.18 | PENDIENTE | 22:14:10 | NULL      |     NULL | NULL          |               0 | NULL         |
+| 29 | RETIRO        | 1764.71 | PENDIENTE | 22:14:12 | NULL      |     NULL | NULL          |               0 | NULL         |
+| 30 | TRANSFERENCIA | 1332.22 | PENDIENTE | 22:14:13 | NULL      |     NULL | NULL          |               0 | NULL         |
+| 31 | RETIRO        |  198.83 | PENDIENTE | 22:14:15 | NULL      |     NULL | NULL          |               0 | NULL         |
+| 32 | DEPOSITO      | 4295.90 | PENDIENTE | 22:14:16 | NULL      |     NULL | NULL          |               0 | NULL         |
+| 33 | TRANSFERENCIA | 3932.57 | PENDIENTE | 22:14:17 | NULL      |     NULL | NULL          |               0 | NULL         |
+| 34 | TRANSFERENCIA |  217.52 | PENDIENTE | 22:14:19 | NULL      |     NULL | NULL          |               0 | NULL         |
+| 35 | DEPOSITO      | 4521.27 | PENDIENTE | 22:14:21 | NULL      |     NULL | NULL          |               0 | NULL         |
+| 36 | RETIRO        | 3072.59 | PENDIENTE | 22:14:23 | NULL      |     NULL | NULL          |               0 | NULL         |
+| 37 | RETIRO        | 1821.18 | PENDIENTE | 22:14:24 | NULL      |     NULL | NULL          |               0 | NULL         |
++----+---------------+---------+-----------+----------+-----------+----------+---------------+-----------------+--------------+

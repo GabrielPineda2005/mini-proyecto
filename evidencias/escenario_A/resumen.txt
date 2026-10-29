@@ -1,0 +1,9 @@
+﻿Escenario A  (USAR_SEMAFORO=false)
+Inicio:   2026-10-28 22:12:06
+Fin:      2026-10-28 22:13:03
+Duracion: 57 s
+
+Procesamientos registrados:   42
+Transacciones distintas:      22
+Procesamientos duplicados:    20
+Espera promedio (creado -> procesado): 14.5 s

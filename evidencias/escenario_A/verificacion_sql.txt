@@ -1,0 +1,48 @@
+﻿-- Transacciones por estado
++-----------+-------+
+| estado    | total |
++-----------+-------+
+| PROCESADO |    22 |
+| PENDIENTE |    16 |
++-----------+-------+
+
+-- Transacciones procesadas por cada consumidor
++---------------+-------+
+| procesado_por | total |
++---------------+-------+
+| consumidor1   |    10 |
+| consumidor2   |    12 |
++---------------+-------+
+
+-- Procesamientos totales vs transacciones distintas (si difieren, hubo duplicados)
++----------------+-------------------------+------------+
+| procesamientos | transacciones_distintas | duplicados |
++----------------+-------------------------+------------+
+|             42 |                      22 |         20 |
++----------------+-------------------------+------------+
+
+-- Transacciones procesadas mas de una vez
++----------------+-------+-------------------------+
+| transaccion_id | veces | consumidores            |
++----------------+-------+-------------------------+
+|              1 |     2 | consumidor2,consumidor1 |
+|              2 |     2 | consumidor2,consumidor1 |
+|              3 |     2 | consumidor2,consumidor1 |
+|              4 |     2 | consumidor2,consumidor1 |
+|              5 |     2 | consumidor1,consumidor2 |
+|              6 |     2 | consumidor1,consumidor2 |
+|              7 |     2 | consumidor1,consumidor2 |
+|              8 |     2 | consumidor2,consumidor1 |
+|              9 |     2 | consumidor2,consumidor1 |
+|             10 |     2 | consumidor1,consumidor2 |
+|             11 |     2 | consumidor1,consumidor2 |
+|             12 |     2 | consumidor1,consumidor2 |
+|             14 |     2 | consumidor2,consumidor1 |
+|             15 |     2 | consumidor1,consumidor2 |
+|             16 |     2 | consumidor1,consumidor2 |
+|             17 |     2 | consumidor1,consumidor2 |
+|             18 |     2 | consumidor2,consumidor1 |
+|             19 |     2 | consumidor2,consumidor1 |
+|             21 |     2 | consumidor1,consumidor2 |
+|             22 |     2 | consumidor1,consumidor2 |
++----------------+-------+-------------------------+

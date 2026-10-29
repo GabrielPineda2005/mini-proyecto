@@ -1,0 +1,24 @@
+﻿-- Transacciones por estado
++-----------+-------+
+| estado    | total |
++-----------+-------+
+| PROCESADO |    24 |
+| PENDIENTE |    13 |
++-----------+-------+
+
+-- Transacciones procesadas por cada consumidor
++---------------+-------+
+| procesado_por | total |
++---------------+-------+
+| consumidor1   |    12 |
+| consumidor2   |    12 |
++---------------+-------+
+
+-- Procesamientos totales vs transacciones distintas (si difieren, hubo duplicados)
++----------------+-------------------------+------------+
+| procesamientos | transacciones_distintas | duplicados |
++----------------+-------------------------+------------+
+|             24 |                      24 |          0 |
++----------------+-------------------------+------------+
+
+-- Transacciones procesadas mas de una vez

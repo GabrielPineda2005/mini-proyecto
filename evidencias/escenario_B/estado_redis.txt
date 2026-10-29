@@ -1,0 +1,16 @@
+﻿[22:13:30] GET semaforo:transacciones = '' | TTL = -2
+[22:13:34] GET semaforo:transacciones = '' | TTL = -2
+[22:13:37] GET semaforo:transacciones = 'consumidor1:5bb99790-0116-4c33-a4ad-81a5d51b96a9' | TTL = 8
+[22:13:40] GET semaforo:transacciones = 'consumidor2:62502aac-87b6-412a-9004-06d07650395b' | TTL = 7
+[22:13:44] GET semaforo:transacciones = 'consumidor2:36d3113b-e27b-44d8-893e-9ad7e814d726' | TTL = 9
+[22:13:47] GET semaforo:transacciones = 'consumidor1:2f23b7cf-fe0d-4788-847d-9988d652f539' | TTL = 7
+[22:13:51] GET semaforo:transacciones = 'consumidor1:4892134f-936c-4416-9868-89006c84e5c4' | TTL = 9
+[22:13:54] GET semaforo:transacciones = 'consumidor2:337b5ba1-4e77-43a6-a92f-c3432999605c' | TTL = 8
+[22:13:57] GET semaforo:transacciones = 'consumidor2:d7b2025f-8cb9-4a38-b522-c54be23e9f24' | TTL = 9
+[22:14:01] GET semaforo:transacciones = 'consumidor1:dc347690-569b-4cb4-bd88-3f1302bc01a1' | TTL = 8
+[22:14:04] GET semaforo:transacciones = 'consumidor1:1a10bcc1-5604-4090-9961-8d40ac82ac14' | TTL = 9
+[22:14:07] GET semaforo:transacciones = 'consumidor1:6aa05233-3fe9-4e37-9a93-ee4402c1de7d' | TTL = 9
+[22:14:10] GET semaforo:transacciones = 'consumidor2:94e83919-a088-485a-aa90-cbafb6e9b5ef' | TTL = 9
+[22:14:14] GET semaforo:transacciones = 'consumidor1:7a716d4e-6607-4896-8dca-3285d2a605d2' | TTL = 9
+[22:14:17] GET semaforo:transacciones = '' | TTL = -2
+[22:14:21] GET semaforo:transacciones = '' | TTL = -2

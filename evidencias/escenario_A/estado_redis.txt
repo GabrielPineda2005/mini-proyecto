@@ -1,0 +1,16 @@
+﻿[22:12:09] GET semaforo:transacciones = '' | TTL = -2
+[22:12:13] GET semaforo:transacciones = '' | TTL = -2
+[22:12:16] GET semaforo:transacciones = '' | TTL = -2
+[22:12:19] GET semaforo:transacciones = '' | TTL = -2
+[22:12:23] GET semaforo:transacciones = '' | TTL = -2
+[22:12:26] GET semaforo:transacciones = '' | TTL = -2
+[22:12:29] GET semaforo:transacciones = '' | TTL = -2
+[22:12:33] GET semaforo:transacciones = '' | TTL = -2
+[22:12:36] GET semaforo:transacciones = '' | TTL = -2
+[22:12:39] GET semaforo:transacciones = '' | TTL = -2
+[22:12:43] GET semaforo:transacciones = '' | TTL = -2
+[22:12:46] GET semaforo:transacciones = '' | TTL = -2
+[22:12:49] GET semaforo:transacciones = '' | TTL = -2
+[22:12:52] GET semaforo:transacciones = '' | TTL = -2
+[22:12:56] GET semaforo:transacciones = '' | TTL = -2
+[22:12:59] GET semaforo:transacciones = '' | TTL = -2

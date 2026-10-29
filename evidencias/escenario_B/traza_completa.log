@@ -1,0 +1,242 @@
+﻿[22:13:27.611] CONSUMIDOR1  | iniciando (USAR_SEMAFORO=True)
+[22:13:27.615] CONSUMIDOR1  | MySQL no disponible (2003), reintentando en 3 s...
+[22:13:27.841] CONSUMIDOR2  | iniciando (USAR_SEMAFORO=True)
+[22:13:27.842] CONSUMIDOR2  | MySQL no disponible (2003), reintentando en 3 s...
+[22:13:27.873] PRODUCTOR | MySQL no disponible (2003), reintentando en 3 s...
+[22:13:30.720] CONSUMIDOR1  | conectado a MySQL
+[22:13:30.735] CONSUMIDOR1  | conectado a Redis
+[22:13:30.736] CONSUMIDOR1  | ADQUIRIR  | semaforo obtenido, entro a la seccion critica
+[22:13:30.758] CONSUMIDOR1  | ESPERAR   | no hay transacciones pendientes
+[22:13:30.758] CONSUMIDOR1  | LIBERAR   | semaforo liberado
+[22:13:30.852] CONSUMIDOR2  | conectado a MySQL
+[22:13:30.857] CONSUMIDOR2  | conectado a Redis
+[22:13:30.858] CONSUMIDOR2  | ADQUIRIR  | semaforo obtenido, entro a la seccion critica
+[22:13:30.858] CONSUMIDOR2  | ESPERAR   | no hay transacciones pendientes
+[22:13:30.858] CONSUMIDOR2  | LIBERAR   | semaforo liberado
+[22:13:30.886] PRODUCTOR | conectado a MySQL
+[22:13:30.894] PRODUCTOR | insertada id=1    | 1008-4150 DEPOSITO      Q  4165.89 | PENDIENTE
+[22:13:32.451] PRODUCTOR | insertada id=2    | 1006-1271 RETIRO        Q  1175.86 | PENDIENTE
+[22:13:32.761] CONSUMIDOR1  | ADQUIRIR  | semaforo obtenido, entro a la seccion critica
+[22:13:32.766] CONSUMIDOR1  | PROCESAR  | id=1    1008-4150 DEPOSITO Q4165.89 ...
+[22:13:32.862] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:13:33.425] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:13:33.530] PRODUCTOR | insertada id=3    | 1007-9700 TRANSFERENCIA Q  4664.32 | PENDIENTE
+[22:13:33.871] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:13:34.203] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:13:34.318] CONSUMIDOR1  | PROCESADO | id=1    -> PROCESADO
+[22:13:34.319] CONSUMIDOR1  | LIBERAR   | semaforo liberado
+[22:13:34.525] CONSUMIDOR2  | ADQUIRIR  | semaforo obtenido, entro a la seccion critica
+[22:13:34.526] CONSUMIDOR2  | PROCESAR  | id=2    1006-1271 RETIRO Q1175.86 ...
+[22:13:34.924] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:13:35.276] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:13:35.490] PRODUCTOR | insertada id=4    | 1000-4274 DEPOSITO      Q  1902.33 | PENDIENTE
+[22:13:35.739] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:13:35.820] CONSUMIDOR2  | PROCESADO | id=2    -> PROCESADO
+[22:13:35.821] CONSUMIDOR2  | LIBERAR   | semaforo liberado
+[22:13:36.128] CONSUMIDOR1  | ADQUIRIR  | semaforo obtenido, entro a la seccion critica
+[22:13:36.132] CONSUMIDOR1  | PROCESAR  | id=3    1007-9700 TRANSFERENCIA Q4664.32 ...
+[22:13:36.706] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:13:37.131] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:13:37.412] PRODUCTOR | insertada id=5    | 1002-3451 TRANSFERENCIA Q  3777.50 | PENDIENTE
+[22:13:37.561] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:13:38.050] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:13:38.294] CONSUMIDOR1  | PROCESADO | id=3    -> PROCESADO
+[22:13:38.296] CONSUMIDOR1  | LIBERAR   | semaforo liberado
+[22:13:38.496] CONSUMIDOR2  | ADQUIRIR  | semaforo obtenido, entro a la seccion critica
+[22:13:38.500] CONSUMIDOR2  | PROCESAR  | id=4    1000-4274 DEPOSITO Q1902.33 ...
+[22:13:38.641] PRODUCTOR | insertada id=6    | 1001-5502 RETIRO        Q  4519.75 | PENDIENTE
+[22:13:38.912] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:13:39.370] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:13:39.740] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:13:40.317] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:13:40.381] PRODUCTOR | insertada id=7    | 1008-6282 RETIRO        Q  4111.44 | PENDIENTE
+[22:13:40.694] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:13:41.055] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:13:41.459] CONSUMIDOR2  | PROCESADO | id=4    -> PROCESADO
+[22:13:41.461] CONSUMIDOR2  | LIBERAR   | semaforo liberado
+[22:13:41.546] CONSUMIDOR1  | ADQUIRIR  | semaforo obtenido, entro a la seccion critica
+[22:13:41.549] CONSUMIDOR1  | PROCESAR  | id=5    1002-3451 TRANSFERENCIA Q3777.50 ...
+[22:13:41.787] PRODUCTOR | insertada id=8    | 1005-6108 RETIRO        Q  3855.57 | PENDIENTE
+[22:13:42.384] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:13:42.888] PRODUCTOR | insertada id=9    | 1001-8936 RETIRO        Q  3630.65 | PENDIENTE
+[22:13:42.909] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:13:43.367] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:13:43.450] CONSUMIDOR1  | PROCESADO | id=5    -> PROCESADO
+[22:13:43.451] CONSUMIDOR1  | LIBERAR   | semaforo liberado
+[22:13:43.801] CONSUMIDOR2  | ADQUIRIR  | semaforo obtenido, entro a la seccion critica
+[22:13:43.805] CONSUMIDOR2  | PROCESAR  | id=6    1001-5502 RETIRO Q4519.75 ...
+[22:13:44.059] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:13:44.506] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:13:44.801] PRODUCTOR | insertada id=10   | 1008-7208 RETIRO        Q  2485.64 | PENDIENTE
+[22:13:44.892] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:13:44.984] CONSUMIDOR2  | PROCESADO | id=6    -> PROCESADO
+[22:13:44.985] CONSUMIDOR2  | LIBERAR   | semaforo liberado
+[22:13:45.344] CONSUMIDOR1  | ADQUIRIR  | semaforo obtenido, entro a la seccion critica
+[22:13:45.346] CONSUMIDOR1  | PROCESAR  | id=7    1008-6282 RETIRO Q4111.44 ...
+[22:13:45.603] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:13:46.204] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:13:46.630] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:13:46.733] PRODUCTOR | insertada id=11   | 1004-8730 DEPOSITO      Q   804.25 | PENDIENTE
+[22:13:47.138] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:13:47.446] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:13:47.966] PRODUCTOR | insertada id=12   | 1002-7019 DEPOSITO      Q  4272.68 | PENDIENTE
+[22:13:48.003] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:13:48.239] CONSUMIDOR1  | PROCESADO | id=7    -> PROCESADO
+[22:13:48.240] CONSUMIDOR1  | LIBERAR   | semaforo liberado
+[22:13:48.441] CONSUMIDOR2  | ADQUIRIR  | semaforo obtenido, entro a la seccion critica
+[22:13:48.445] CONSUMIDOR2  | PROCESAR  | id=8    1005-6108 RETIRO Q3855.57 ...
+[22:13:49.192] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:13:49.543] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:13:49.739] PRODUCTOR | insertada id=13   | 1004-4227 TRANSFERENCIA Q  1238.22 | PENDIENTE
+[22:13:49.914] CONSUMIDOR2  | LIBERAR   | semaforo liberado
+[22:13:49.914] CONSUMIDOR2  | PROCESADO | id=8    -> PROCESADO
+[22:13:50.088] CONSUMIDOR1  | ADQUIRIR  | semaforo obtenido, entro a la seccion critica
+[22:13:50.091] CONSUMIDOR1  | PROCESAR  | id=9    1001-8936 RETIRO Q3630.65 ...
+[22:13:50.735] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:13:50.895] PRODUCTOR | insertada id=14   | 1007-5387 RETIRO        Q  1461.10 | PENDIENTE
+[22:13:51.166] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:13:51.749] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:13:51.914] CONSUMIDOR1  | PROCESADO | id=9    -> PROCESADO
+[22:13:51.916] CONSUMIDOR1  | LIBERAR   | semaforo liberado
+[22:13:52.136] CONSUMIDOR2  | ADQUIRIR  | semaforo obtenido, entro a la seccion critica
+[22:13:52.136] CONSUMIDOR2  | PROCESAR  | id=10   1008-7208 RETIRO Q2485.64 ...
+[22:13:52.462] PRODUCTOR | insertada id=15   | 1004-5962 RETIRO        Q  1461.56 | PENDIENTE
+[22:13:52.545] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:13:53.024] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:13:53.360] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:13:53.693] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:13:54.134] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:13:54.445] PRODUCTOR | insertada id=16   | 1004-5079 DEPOSITO      Q  2571.87 | PENDIENTE
+[22:13:54.554] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:13:54.880] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:13:54.980] CONSUMIDOR2  | PROCESADO | id=10   -> PROCESADO
+[22:13:54.983] CONSUMIDOR2  | LIBERAR   | semaforo liberado
+[22:13:55.226] CONSUMIDOR1  | ADQUIRIR  | semaforo obtenido, entro a la seccion critica
+[22:13:55.230] CONSUMIDOR1  | PROCESAR  | id=11   1004-8730 DEPOSITO Q804.25 ...
+[22:13:55.910] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:13:55.979] PRODUCTOR | insertada id=17   | 1002-6772 DEPOSITO      Q  2685.31 | PENDIENTE
+[22:13:56.224] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:13:56.595] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:13:56.922] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:13:56.977] CONSUMIDOR1  | LIBERAR   | semaforo liberado
+[22:13:56.977] CONSUMIDOR1  | PROCESADO | id=11   -> PROCESADO
+[22:13:57.108] PRODUCTOR | insertada id=18   | 1000-4412 DEPOSITO      Q  1033.98 | PENDIENTE
+[22:13:57.294] CONSUMIDOR2  | ADQUIRIR  | semaforo obtenido, entro a la seccion critica
+[22:13:57.295] CONSUMIDOR2  | PROCESAR  | id=12   1002-7019 DEPOSITO Q4272.68 ...
+[22:13:57.805] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:13:58.328] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:13:58.721] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:13:58.749] CONSUMIDOR2  | LIBERAR   | semaforo liberado
+[22:13:58.749] CONSUMIDOR2  | PROCESADO | id=12   -> PROCESADO
+[22:13:58.931] PRODUCTOR | insertada id=19   | 1007-1471 DEPOSITO      Q   163.98 | PENDIENTE
+[22:13:59.132] CONSUMIDOR1  | ADQUIRIR  | semaforo obtenido, entro a la seccion critica
+[22:13:59.135] CONSUMIDOR1  | PROCESAR  | id=13   1004-4227 TRANSFERENCIA Q1238.22 ...
+[22:13:59.629] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:13:59.975] PRODUCTOR | insertada id=20   | 1009-1632 DEPOSITO      Q  1432.94 | PENDIENTE
+[22:14:00.058] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:14:00.474] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:14:00.883] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:14:00.992] PRODUCTOR | insertada id=21   | 1006-1337 DEPOSITO      Q  3476.83 | PENDIENTE
+[22:14:01.314] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:14:01.432] CONSUMIDOR1  | PROCESADO | id=13   -> PROCESADO
+[22:14:01.435] CONSUMIDOR1  | LIBERAR   | semaforo liberado
+[22:14:01.764] CONSUMIDOR2  | ADQUIRIR  | semaforo obtenido, entro a la seccion critica
+[22:14:01.766] CONSUMIDOR2  | PROCESAR  | id=14   1007-5387 RETIRO Q1461.10 ...
+[22:14:02.223] PRODUCTOR | insertada id=22   | 1007-8702 DEPOSITO      Q  3549.31 | PENDIENTE
+[22:14:02.270] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:14:02.673] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:14:02.801] CONSUMIDOR2  | PROCESADO | id=14   -> PROCESADO
+[22:14:02.802] CONSUMIDOR2  | LIBERAR   | semaforo liberado
+[22:14:02.983] CONSUMIDOR1  | ADQUIRIR  | semaforo obtenido, entro a la seccion critica
+[22:14:02.984] CONSUMIDOR1  | PROCESAR  | id=15   1004-5962 RETIRO Q1461.56 ...
+[22:14:03.419] PRODUCTOR | insertada id=23   | 1004-6523 DEPOSITO      Q   525.15 | PENDIENTE
+[22:14:03.586] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:14:03.946] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:14:04.523] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:14:04.842] PRODUCTOR | insertada id=24   | 1005-6222 DEPOSITO      Q  4835.35 | PENDIENTE
+[22:14:04.880] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:14:04.989] CONSUMIDOR1  | PROCESADO | id=15   -> PROCESADO
+[22:14:04.990] CONSUMIDOR1  | LIBERAR   | semaforo liberado
+[22:14:05.321] CONSUMIDOR2  | ADQUIRIR  | semaforo obtenido, entro a la seccion critica
+[22:14:05.322] CONSUMIDOR2  | PROCESAR  | id=16   1004-5079 DEPOSITO Q2571.87 ...
+[22:14:05.922] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:14:05.929] PRODUCTOR | insertada id=25   | 1003-6449 TRANSFERENCIA Q  3212.80 | PENDIENTE
+[22:14:06.456] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:14:06.809] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:14:06.955] CONSUMIDOR2  | PROCESADO | id=16   -> PROCESADO
+[22:14:06.956] CONSUMIDOR2  | LIBERAR   | semaforo liberado
+[22:14:07.195] CONSUMIDOR1  | ADQUIRIR  | semaforo obtenido, entro a la seccion critica
+[22:14:07.198] CONSUMIDOR1  | PROCESAR  | id=17   1002-6772 DEPOSITO Q2685.31 ...
+[22:14:07.528] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:14:07.937] PRODUCTOR | insertada id=26   | 1005-4851 TRANSFERENCIA Q  3255.43 | PENDIENTE
+[22:14:08.085] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:14:08.617] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:14:08.976] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:14:09.070] PRODUCTOR | insertada id=27   | 1002-7800 TRANSFERENCIA Q   845.71 | PENDIENTE
+[22:14:09.362] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:14:09.798] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:14:09.955] CONSUMIDOR1  | PROCESADO | id=17   -> PROCESADO
+[22:14:09.957] CONSUMIDOR1  | LIBERAR   | semaforo liberado
+[22:14:10.283] CONSUMIDOR2  | ADQUIRIR  | semaforo obtenido, entro a la seccion critica
+[22:14:10.286] CONSUMIDOR2  | PROCESAR  | id=18   1000-4412 DEPOSITO Q1033.98 ...
+[22:14:10.550] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:14:10.633] PRODUCTOR | insertada id=28   | 1008-2338 DEPOSITO      Q  2018.18 | PENDIENTE
+[22:14:10.931] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:14:11.358] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:14:11.853] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:14:12.232] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:14:12.400] PRODUCTOR | insertada id=29   | 1008-2878 RETIRO        Q  1764.71 | PENDIENTE
+[22:14:12.548] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:14:13.054] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:14:13.242] CONSUMIDOR2  | PROCESADO | id=18   -> PROCESADO
+[22:14:13.251] CONSUMIDOR2  | LIBERAR   | semaforo liberado
+[22:14:13.614] CONSUMIDOR1  | ADQUIRIR  | semaforo obtenido, entro a la seccion critica
+[22:14:13.617] CONSUMIDOR1  | PROCESAR  | id=19   1007-1471 DEPOSITO Q163.98 ...
+[22:14:13.777] PRODUCTOR | insertada id=30   | 1000-7104 TRANSFERENCIA Q  1332.22 | PENDIENTE
+[22:14:14.238] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:14:14.784] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:14:15.078] PRODUCTOR | insertada id=31   | 1005-7340 RETIRO        Q   198.83 | PENDIENTE
+[22:14:15.147] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:14:15.538] CONSUMIDOR1  | PROCESADO | id=19   -> PROCESADO
+[22:14:15.539] CONSUMIDOR1  | LIBERAR   | semaforo liberado
+[22:14:15.602] CONSUMIDOR2  | ADQUIRIR  | semaforo obtenido, entro a la seccion critica
+[22:14:15.602] CONSUMIDOR2  | PROCESAR  | id=20   1009-1632 DEPOSITO Q1432.94 ...
+[22:14:16.387] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:14:16.712] PRODUCTOR | insertada id=32   | 1006-4078 DEPOSITO      Q  4295.90 | PENDIENTE
+[22:14:16.754] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:14:17.214] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:14:17.653] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:14:17.699] CONSUMIDOR2  | LIBERAR   | semaforo liberado
+[22:14:17.699] CONSUMIDOR2  | PROCESADO | id=20   -> PROCESADO
+[22:14:17.940] PRODUCTOR | insertada id=33   | 1008-3069 TRANSFERENCIA Q  3932.57 | PENDIENTE
+[22:14:18.159] CONSUMIDOR1  | ADQUIRIR  | semaforo obtenido, entro a la seccion critica
+[22:14:18.163] CONSUMIDOR1  | PROCESAR  | id=21   1006-1337 DEPOSITO Q3476.83 ...
+[22:14:18.372] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:14:18.700] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:14:19.010] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:14:19.320] PRODUCTOR | insertada id=34   | 1006-4765 TRANSFERENCIA Q   217.52 | PENDIENTE
+[22:14:19.373] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:14:19.800] CONSUMIDOR1  | PROCESADO | id=21   -> PROCESADO
+[22:14:19.802] CONSUMIDOR1  | LIBERAR   | semaforo liberado
+[22:14:19.886] CONSUMIDOR2  | ADQUIRIR  | semaforo obtenido, entro a la seccion critica
+[22:14:19.887] CONSUMIDOR2  | PROCESAR  | id=22   1007-8702 DEPOSITO Q3549.31 ...
+[22:14:20.699] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:14:21.041] PRODUCTOR | insertada id=35   | 1007-2198 DEPOSITO      Q  4521.27 | PENDIENTE
+[22:14:21.050] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:14:21.138] CONSUMIDOR2  | LIBERAR   | semaforo liberado
+[22:14:21.138] CONSUMIDOR2  | PROCESADO | id=22   -> PROCESADO
+[22:14:21.450] CONSUMIDOR1  | ADQUIRIR  | semaforo obtenido, entro a la seccion critica
+[22:14:21.451] CONSUMIDOR1  | PROCESAR  | id=23   1004-6523 DEPOSITO Q525.15 ...
+[22:14:21.747] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:14:22.235] CONSUMIDOR2  | ESPERAR   | semaforo ocupado por consumidor1
+[22:14:22.652] CONSUMIDOR1  | PROCESADO | id=23   -> PROCESADO
+[22:14:22.653] CONSUMIDOR1  | LIBERAR   | semaforo liberado
+[22:14:22.820] CONSUMIDOR2  | ADQUIRIR  | semaforo obtenido, entro a la seccion critica
+[22:14:22.824] CONSUMIDOR2  | PROCESAR  | id=24   1005-6222 DEPOSITO Q4835.35 ...
+[22:14:23.015] PRODUCTOR | insertada id=36   | 1006-8962 RETIRO        Q  3072.59 | PENDIENTE
+[22:14:23.540] CONSUMIDOR1  | ESPERAR   | semaforo ocupado por consumidor2
+[22:14:23.871] CONSUMIDOR2  | LIBERAR   | semaforo liberado
+[22:14:23.871] CONSUMIDOR2  | PROCESADO | id=24   -> PROCESADO
+[22:14:24.098] CONSUMIDOR1  | ADQUIRIR  | semaforo obtenido, entro a la seccion critica
+[22:14:24.102] CONSUMIDOR1  | PROCESAR  | id=25   1003-6449 TRANSFERENCIA Q3212.80 ...
+[22:14:24.111] PRODUCTOR | insertada id=37   | 1003-9128 RETIRO        Q  1821.18 | PENDIENTE

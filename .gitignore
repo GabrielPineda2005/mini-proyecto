@@ -1,6 +1,3 @@
-# Logs largos generados en las pruebas
-evidencias/*.log
-
 # Archivos de Python que no se suben
 __pycache__/
 *.pyc
