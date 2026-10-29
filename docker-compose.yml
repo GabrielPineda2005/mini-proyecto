@@ -31,3 +31,31 @@ services:
     depends_on:
       mysql:
         condition: service_healthy   # no arranca hasta que MySQL este listo
+
+  consumidor1:
+    build: ./consumidor
+    image: mini-proyecto-consumidor   # misma imagen para los dos consumidores
+    container_name: consumidor1
+    env_file: .env
+    environment:
+      ID_CONSUMIDOR: consumidor1
+      USAR_SEMAFORO: ${USAR_SEMAFORO:-true}   # se puede cambiar al levantar (Escenario A/B)
+    depends_on:
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  consumidor2:
+    build: ./consumidor
+    image: mini-proyecto-consumidor
+    container_name: consumidor2
+    env_file: .env
+    environment:
+      ID_CONSUMIDOR: consumidor2
+      USAR_SEMAFORO: ${USAR_SEMAFORO:-true}
+    depends_on:
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
