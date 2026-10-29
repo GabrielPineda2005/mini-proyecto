@@ -23,3 +23,11 @@ services:
       interval: 5s
       timeout: 3s
       retries: 10
+
+  productor:
+    build: ./productor
+    container_name: productor
+    env_file: .env
+    depends_on:
+      mysql:
+        condition: service_healthy   # no arranca hasta que MySQL este listo
