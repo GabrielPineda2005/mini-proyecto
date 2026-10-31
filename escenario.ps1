@@ -32,6 +32,13 @@ function Sql([string]$consulta, [string[]]$opciones = @("-t")) {
 
 Write-Host "== Escenario $Escenario (USAR_SEMAFORO=$semaforo) =="
 
+# Sin Docker no hay prueba: se aborta antes de sobrescribir evidencias anteriores
+docker info *> $null
+if ($LASTEXITCODE -ne 0) {
+    Write-Host "Docker no esta en ejecucion. Abre Docker Desktop y vuelve a intentarlo."
+    exit 1
+}
+
 # 1. Arranque limpio: se borran los datos anteriores
 $env:USAR_SEMAFORO = $semaforo
 docker compose down -v | Out-Null
